@@ -9,7 +9,7 @@
       <%= f.input :company_id, :as => :select, label: "Kupac", required: true, :collection => Company.all.map {|kupac| [kupac.name, kupac.id]} %>
       <%= f.input :description, label: "Opis posla", required: true %>
 
-    <%= f.button :submit, "Kreirajs projekt", class: "btn btn-success" %>
+    <%= f.button :submit, "Kreiraj projekt", class: "btn btn-success" %>
     <%= link_to "Cancel", projects_index_path, class: "btn btn-default" %>
       </div>
     </div>
