@@ -1,0 +1,27 @@
+<%= grid(@companies_grid, show_filters: :always) do |g|
+
+  g.column name: 'Id', attribute: 'id', filter: false, in_csv: false do |t|
+    t.id
+  end
+
+  g.column name: 'Ime', attribute: 'name' do |t|
+    t.name
+  end
+
+  g.column name: 'Država', attribute: 'country', custom_filter: :auto do |t|
+    t.country
+  end
+
+  g.column name: 'Grad', attribute: 'city', custom_filter: :auto do |t|
+    t.city
+  end
+
+  g.column name: 'Adresa', attribute: 'address' do |t|
+    t.address
+  end
+
+  g.column name: 'OIB/VAT', attribute: 'vat' do |t|
+    t.vat
+  end
+
+  end -%>

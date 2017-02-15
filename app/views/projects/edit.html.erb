@@ -1,0 +1,16 @@
+<div class="page-header head-page">
+  <h1>Uredi Projekt</h1>
+</div>
+
+<%= simple_form_for @project, html: {class: 'form-horizontal'} do |f| %>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+    <%= f.input :title, label: "Naziv projekta", required: true %>
+    <%= f.input :description, label: "Opis posla", required: true %>
+    <%= f.input :company_id, label: "Kupac", required: true, :collection => Company.all.map {|kupac| [kupac.name, kupac.id]}  %>
+
+    <%= f.button :submit, "Izmijeni projekt", class: "btn btn-success" %>
+    <%= link_to "Cancel", projects_index_path, class: "btn btn-default" %>
+        </div>
+      </div>
+<% end %>

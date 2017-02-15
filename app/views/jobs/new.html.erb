@@ -1,0 +1,16 @@
+<div class="page-header head-page">
+  <h1>Kreiraj novi unos u vremensku listu</h1>
+</div>
+
+<%= simple_form_for @job, html: {class: 'form-horizontal'} do |f| %>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+    <%= f.input :project_id, label: "Projekt", :as => :select, required: true, :collection => Project.all.map {|kupac| [kupac.title, kupac.id]} %>
+    <%= f.input :hours, label: "Utrošeno vrijeme", required: true, default: Time.parse('00:00'),input_html: {value: Time.parse('00:00')}  %>
+    <%= f.input :description, label: "Opis", required: true %>
+
+    <%= f.button :submit, "Kreiraj unos", class: "btn btn-success" %>
+    <%= link_to "Cancel", jobs_index_path, class: "btn btn-default" %>
+      </div>
+    </div>
+<% end %>

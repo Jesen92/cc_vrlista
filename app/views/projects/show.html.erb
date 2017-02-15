@@ -1,0 +1,11 @@
+<div class="page-header head-page">
+  <h1><%= @project.title %> <small><%= @project.company.name %></small></h1>
+</div>
+
+<ul class="list-group">
+  <li class="list-group-item"><h3>Kupac: </h3><%= @project.company.name %></li>
+  <li class="list-group-item"><h3>Opis projekta: </h3><%= @project.description %></li>
+  <li class="list-group-item"><h3>Projekt kreiran: </h3><%= @project.created_at.strftime("%d.%m.%Y.") %></li>
+</ul>
+
+<%= render partial: 'projects/project_grid' %>

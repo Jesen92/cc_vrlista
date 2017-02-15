@@ -1,0 +1,14 @@
+<div class="page-header head-page">
+  <h1><%= link_to @job.project.title, projects_show_path(id: @job.project.id) %> <small><%= @job.created_at.strftime("%d.%m.%Y.") %></small></h1>
+</div>
+
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <span class="badge"><%= @job.hours.strftime("%H:%M").to_s %></span>
+        <%= @job.description %>
+      </li>
+    </ul>
+  </div>
+</div>

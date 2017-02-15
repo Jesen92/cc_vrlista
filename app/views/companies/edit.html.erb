@@ -1,0 +1,26 @@
+<div class="page-header head-page">
+  <h1>Uredi Kupca</h1>
+</div>
+
+<%= simple_form_for @company, html: {class: 'form-horizontal'} do |f| %>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <%= f.input :name, label: "Naziv kupca", required: true %>
+        <div class="row">
+        <div class="col-md-4">
+        <%= f.input :country, as: :country,:priority => ["HR"], label: "Država", required: true %>
+        </div>
+        <div class="col-md-4">
+        <%= f.input :city, label: "Grad", required: true %>
+        </div>
+        <div class="col-md-4">
+        <%= f.input :address, label: "Adresa", required: true %>
+        </div>
+        </div>
+        <%= f.input :vat, label: "OIB/VAT", required: true %>
+
+        <%= f.button :submit, "Izmijeni kupca", class: "btn btn-success" %>
+        <%= link_to "Cancel", companies_index_path, class: "btn btn-default" %>
+      </div>
+    </div>
+<% end %>

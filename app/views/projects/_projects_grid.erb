@@ -1,0 +1,27 @@
+<%= grid(@projects_grid, show_filters: :always) do |g|
+
+  g.column name: 'Id', attribute: 'id', filter: false, in_csv: false do |t|
+    t.id
+  end
+
+  g.column name: 'Naziv projekta', attribute: 'title' do |t|
+    t.title
+  end
+
+  g.column name: 'Kompanija', attribute: 'name', custom_filter: :auto, assoc: :company do |t|
+    t.company.name
+  end
+
+  g.column name: 'Kreiran', attribute: 'created_at', filter: :jquery_datepicker do |t|
+    t.created_at.strftime("%d.%m.%Y.")
+  end
+
+  g.column name: 'Izmijenjen', attribute: 'updated_at', filter: :jquery_datepicker do |t|
+    t.updated_at.strftime("%d.%m.%Y.")
+  end
+
+  g.column in_csv: false do |t|
+    link_to("Pregled", projects_show_path(id: t.id))+" / "+link_to("Uredi", projects_edit_path(id: t.id), :method => :get)
+  end
+
+end -%>
