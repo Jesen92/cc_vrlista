@@ -20,7 +20,13 @@
     t.description
   end
 
-  g.column name: 'Datum', attribute: 'created_at', filter: :jquery_datepicker do |t|
+  g.column name: 'Datum odrađenog posla', attribute: 'job_date' do |t|
+    if t.job_date
+      t.job_date.strftime("%d.%m.%Y.")
+    end
+  end
+
+  g.column name: 'Datum Unosa u listu', attribute: 'created_at', filter: :jquery_datepicker, in_csv: false do |t|
     t.created_at.strftime("%d.%m.%Y. %H:%M")
   end
 

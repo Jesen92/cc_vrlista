@@ -17,3 +17,7 @@
 //= require wice_grid
 //= require jquery-ui
 //= require_tree .
+
+$(document).on("page:change", function(){
+    $("input.datepicker").datepicker();
+});

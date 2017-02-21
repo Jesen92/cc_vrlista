@@ -1,5 +1,5 @@
 <div class="page-header head-page">
-  <h1><%= link_to @job.project.title, projects_show_path(id: @job.project.id) %> <small><%= @job.created_at.strftime("%d.%m.%Y.") %></small></h1>
+  <h1><%= link_to @job.project.title, projects_show_path(id: @job.project.id) %> <small><%= @job.job_date.strftime("%d.%m.%Y.") %></small></h1>
 </div>
 
 <div class="row">

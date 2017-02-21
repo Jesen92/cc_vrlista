@@ -6,7 +6,14 @@
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
     <%= f.input :project_id, label: "Projekt", :as => :select, required: true, :collection => Project.all.map {|kupac| [kupac.title, kupac.id]} %>
-    <%= f.input :hours, label: "Utrošeno vrijeme", required: true, default: Time.parse('00:00'),input_html: {value: Time.parse('00:00')}  %>
+    <div class="row">
+      <div class="col-md-4">
+      <%= f.input :job_date, label: "Datum odrađenog posla", input_html: {value: Date.today, class: "datepicker"},required: true %>
+      </div>
+      <div class="col-md-4">
+      <%= f.input :hours, label: "Utrošeno vrijeme", required: true, default: Time.parse('00:00'),input_html: {value: Time.parse('00:00')}  %>
+      </div>
+    </div>
     <%= f.input :description, label: "Opis", required: true %>
 
     <%= f.button :submit, "Kreiraj unos", class: "btn btn-success" %>
