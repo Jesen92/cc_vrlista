@@ -4,7 +4,6 @@
     <list default="true" id="dde4f2cd-c56a-4f12-b631-119f585d51c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/jobs/_jobs_grid.erb" afterPath="$PROJECT_DIR$/app/views/jobs/_jobs_grid.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="vremenska_lista.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +19,7 @@
     <SUITE FILE_PATH="coverage/vremenska_lista@db_create__vremenska_lista.coverage" NAME="db:create: vremenska_lista Coverage Results" MODIFIED="1486993831533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vremenska_lista" />
     <SUITE FILE_PATH="coverage/vremenska_lista@routes__vremenska_lista.coverage" NAME="routes: vremenska_lista Coverage Results" MODIFIED="1487090965926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vremenska_lista" />
     <SUITE FILE_PATH="coverage/vremenska_lista@assets_precompile__vremenska_lista.coverage" NAME="assets:precompile: vremenska_lista Coverage Results" MODIFIED="1487161712560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vremenska_lista" />
-    <SUITE FILE_PATH="coverage/vremenska_lista@Development__vremenska_lista.coverage" NAME="Development: vremenska_lista Coverage Results" MODIFIED="1489494139587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vremenska_lista" />
+    <SUITE FILE_PATH="coverage/vremenska_lista@Development__vremenska_lista.coverage" NAME="Development: vremenska_lista Coverage Results" MODIFIED="1489496329116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vremenska_lista" />
     <SUITE FILE_PATH="coverage/vremenska_lista@db_migrate__vremenska_lista.coverage" NAME="db:migrate: vremenska_lista Coverage Results" MODIFIED="1487682056348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vremenska_lista" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -65,8 +64,8 @@
       <file leaf-file-name="_jobs_grid.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/jobs/_jobs_grid.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+            <state relative-caret-position="314">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -762,12 +761,12 @@
       <workItem from="1487681895853" duration="8005000" />
       <workItem from="1487769875936" duration="3094000" />
       <workItem from="1487775793743" duration="15000" />
-      <workItem from="1489493882522" duration="342000" />
+      <workItem from="1489493882522" duration="1171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40139000" />
+    <option name="totallyTimeSpent" value="40968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-105" width="1920" height="1057" extended-state="0" />
@@ -917,8 +916,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/jobs/_jobs_grid.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        <state relative-caret-position="314">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding />
         </state>
       </provider>
