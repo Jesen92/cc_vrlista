@@ -27,6 +27,8 @@ Rails.application.routes.draw do
 
   root :to => "jobs#index"
 
+  match '/index.csv' => 'jobs#index', via: :get, defaults: { format: :csv }
+
   devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', confirmations: 'users/confirmations'}
 
   devise_scope :user do
@@ -43,6 +45,7 @@ Rails.application.routes.draw do
   resources :companies
   resources :projects
   resources :jobs
+
 
   end
   # The priority is based upon order of creation: first created -> highest priority.

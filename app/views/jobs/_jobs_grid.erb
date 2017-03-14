@@ -8,7 +8,7 @@
     t.project.title
   end
 
-  g.column name: 'Kupac', attribute: 'id', assoc: :project, custom_filter: Project.all.map{|pr| [pr.company.name, pr.id]} do |t|
+  g.column name: 'Klijent', attribute: 'id', assoc: :project, custom_filter: Company.all.map{|pr| [pr.name, pr.id]} do |t|
     t.project.company.name
   end
 
